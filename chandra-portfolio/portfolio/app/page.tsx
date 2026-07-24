@@ -51,9 +51,8 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={0.15}>
             <div className="relative mx-auto w-full max-w-sm">
-              <div className="aspect-[4/5] w-full rounded-3xl border border-line bg-accent-soft" aria-hidden="true">
-                {/* Profile image: drop /public/profile.jpg and replace this div with <Image>. */}
-                <div className="flex h-full items-center justify-center text-6xl font-extrabold text-accent/30">CP</div>
+              <div className="aspect-[4/5] w-full overflow-hidden rounded-3xl border border-line bg-accent-soft">
+                <img src="/profile.jpg" alt="Chandra Prakash Upadhyay" className="h-full w-full object-cover object-top" />
               </div>
               <div className="absolute -bottom-4 -left-4 rounded-2xl border border-line bg-white/90 px-4 py-3 shadow-sm backdrop-blur">
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-muted">Currently targeting</p>
