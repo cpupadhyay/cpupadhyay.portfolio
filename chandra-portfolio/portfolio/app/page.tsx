@@ -37,7 +37,7 @@ export default function HomePage() {
               with metrics, and communicate in the language of decisions, not dashboards.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/projects" className="focus-ring rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent">
+              <Link href="/projects" className="focus-ring rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-[#0B1220] transition-colors hover:bg-accent-dim">
                 Read the case studies
               </Link>
               <a href="/resume.pdf" className="focus-ring rounded-full border border-line bg-white px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent" download>
