@@ -5,11 +5,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#0A0A0A",
-        accent: { DEFAULT: "#2563EB", soft: "#EFF4FF", dim: "#1D4ED8" },
-        line: "#E8E8E6",
-        paper: "#FFFFFF",
-        muted: "#6B7280",
+        ink: "#F3F7FF",
+        accent: { DEFAULT: "#60A5FA", soft: "#152B48", dim: "#93C5FD" },
+        line: "#253550",
+        paper: "#0B1220",
+        muted: "#98A7BD",
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
@@ -18,12 +18,12 @@ const config: Config = {
       typography: () => ({
         DEFAULT: {
           css: {
-            "--tw-prose-body": "#333333",
-            "--tw-prose-headings": "#0A0A0A",
-            "--tw-prose-links": "#2563EB",
-            "--tw-prose-bold": "#0A0A0A",
-            "--tw-prose-th-borders": "#E8E8E6",
-            "--tw-prose-td-borders": "#E8E8E6",
+            "--tw-prose-body": "#C9D5E6",
+            "--tw-prose-headings": "#F3F7FF",
+            "--tw-prose-links": "#60A5FA",
+            "--tw-prose-bold": "#F3F7FF",
+            "--tw-prose-th-borders": "#253550",
+            "--tw-prose-td-borders": "#253550",
             maxWidth: "none",
             a: { textDecoration: "none", fontWeight: "500", "&:hover": { textDecoration: "underline" } },
             "h1, h2, h3": { letterSpacing: "-0.02em" },
