@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="border-b border-line bg-[linear-gradient(180deg,#FAFBFF_0%,#FFFFFF_100%)]">
+      <section className="border-b border-line bg-[linear-gradient(180deg,#101A2C_0%,#0B1220_100%)]">
         <div className="mx-auto grid max-w-shell grid-cols-1 items-center gap-10 px-5 py-20 sm:py-28 lg:grid-cols-[1.4fr_1fr]">
           <Reveal>
             <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-accent">
@@ -54,7 +54,7 @@ export default function HomePage() {
               <div className="aspect-[4/5] w-full overflow-hidden rounded-3xl border border-line bg-accent-soft">
                 <img src="/profile.jpg" alt="Chandra Prakash Upadhyay" className="h-full w-full object-cover object-top" />
               </div>
-              <div className="absolute -bottom-4 -left-4 rounded-2xl border border-line bg-white/90 px-4 py-3 shadow-sm backdrop-blur">
+              <div className="absolute -bottom-4 -left-4 rounded-2xl border border-line bg-[#111C2F]/90 px-4 py-3 shadow-sm backdrop-blur">
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-muted">Currently targeting</p>
                 <p className="text-sm font-bold text-ink">APM · Product Analyst roles</p>
               </div>
@@ -86,7 +86,7 @@ export default function HomePage() {
       </section>
 
       {/* Internship timeline */}
-      <section className="border-y border-line bg-[#FAFAFA]" aria-labelledby="experience">
+      <section className="border-y border-line bg-[#0E182A]" aria-labelledby="experience">
         <div className="mx-auto max-w-shell px-5 py-16">
           <Reveal>
             <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-accent">Experience</p>
@@ -188,7 +188,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact CTA */}
-      <section className="border-t border-line bg-[linear-gradient(180deg,#FFFFFF_0%,#FAFBFF_100%)]" aria-labelledby="contact-cta">
+      <section className="border-t border-line bg-[linear-gradient(180deg,#0B1220_0%,#101A2C_100%)]" aria-labelledby="contact-cta">
         <div className="mx-auto max-w-shell px-5 py-20 text-center">
           <Reveal>
             <h2 id="contact-cta" className="mx-auto max-w-2xl text-3xl font-extrabold tracking-tight sm:text-4xl">
