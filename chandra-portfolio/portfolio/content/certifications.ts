@@ -13,7 +13,7 @@ export const certifications: Certification[] = [
     slug: "ibm-ai-product-manager",
     title: "IBM AI Product Manager Professional Certificate",
     issuer: "Coursera · IBM",
-    status: "In Progress — expected Aug 2026",
+    status: "In Progress — expected Sep 2026",
     skills: ["AI Product Management", "Product Lifecycle", "Agile", "Prompt Engineering"],
     about:
       "A multi-course professional certificate covering the full AI product lifecycle — from opportunity discovery and requirements to responsible AI, delivery, and stakeholder communication.",
