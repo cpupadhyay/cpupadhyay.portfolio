@@ -17,7 +17,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-white/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-line bg-[#0B1220]/80 backdrop-blur-md">
       <nav className="mx-auto flex h-14 max-w-shell items-center justify-between px-5" aria-label="Primary">
         <Link href="/" className="focus-ring rounded text-sm font-bold tracking-tight">
           CP<span className="text-accent">.</span>
@@ -54,7 +54,7 @@ export default function Navbar() {
         </button>
       </nav>
       {open && (
-        <div className="border-t border-line bg-white px-5 py-3 md:hidden">
+        <div className="border-t border-line bg-[#101A2C] px-5 py-3 md:hidden">
           {links.map((l) => (
             <Link
               key={l.href}
