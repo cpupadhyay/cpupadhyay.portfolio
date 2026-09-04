@@ -67,7 +67,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
                   href={r.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="focus-ring rounded-full bg-ink px-4 py-1.5 text-[12px] font-semibold text-white transition-colors hover:bg-accent"
+                  className="focus-ring rounded-full bg-accent px-4 py-1.5 text-[12px] font-semibold text-[#0B1220] transition-colors hover:bg-accent"
                 >
                   {r.label}
                 </a>
