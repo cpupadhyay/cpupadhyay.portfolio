@@ -30,7 +30,7 @@ export default function Navbar() {
                 key={l.href}
                 href={l.href}
                 className={`focus-ring rounded-full px-3 py-1.5 text-[13px] font-medium transition-colors ${
-                  active ? "bg-ink text-white" : "text-muted hover:text-ink"
+                  active ? "bg-accent text-[#0B1220]" : "text-muted hover:text-ink"
                 }`}
               >
                 {l.label}
