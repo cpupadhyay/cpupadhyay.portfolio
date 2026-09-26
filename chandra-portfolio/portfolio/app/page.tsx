@@ -22,16 +22,16 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="border-b border-line bg-[linear-gradient(180deg,#101A2C_0%,#0B1220_100%)]">
-        <div className="mx-auto grid max-w-shell grid-cols-1 items-center gap-10 px-5 py-20 sm:py-28 lg:grid-cols-[1.4fr_1fr]">
+        <div className="mx-auto grid max-w-shell grid-cols-1 items-center gap-12 px-5 py-20 sm:py-28 lg:grid-cols-[1.55fr_0.95fr]">
           <Reveal>
-            <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-accent">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-accent">
               Aspiring Associate Product Manager · Bengaluru, India
             </p>
-            <h1 className="mt-4 text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-6xl">
+            <h1 className="mt-5 max-w-3xl text-4xl font-bold leading-[1.04] tracking-[-0.03em] sm:text-6xl">
               I turn user data into{" "}
               <span className="text-accent">product decisions.</span>
             </h1>
-            <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
               I'm Chandra Prakash Upadhyay — AI product builder, ex-Soroco data analyst, and the
               author of six end-to-end product case studies. I start with the user problem, validate
               with metrics, and communicate in the language of decisions, not dashboards.
@@ -50,11 +50,15 @@ export default function HomePage() {
             </div>
           </Reveal>
           <Reveal delay={0.15}>
-            <div className="relative mx-auto w-full max-w-sm">
-              <div className="aspect-[4/5] w-full overflow-hidden rounded-3xl border border-line bg-accent-soft">
-                <img src="/profile.jpg" alt="Chandra Prakash Upadhyay" className="h-full w-full object-cover object-top" />
+            <div className="relative mx-auto w-full max-w-md">
+              <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[#111C2F] shadow-[0_30px_80px_-30px_rgba(0,0,0,0.65)]">
+                <img
+                  src="/profile.jpg"
+                  alt="Chandra Prakash Upadhyay"
+                  className="block h-auto w-full object-contain"
+                />
               </div>
-              <div className="absolute -bottom-4 -left-4 rounded-2xl border border-line bg-[#111C2F]/90 px-4 py-3 shadow-sm backdrop-blur">
+              <div className="absolute -bottom-5 left-5 rounded-2xl border border-white/10 bg-[#111C2F]/95 px-4 py-3 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.6)] backdrop-blur">
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-muted">Currently targeting</p>
                 <p className="text-sm font-bold text-ink">APM · Product Analyst roles</p>
               </div>
