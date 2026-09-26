@@ -22,7 +22,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="border-b border-line bg-[linear-gradient(180deg,#101A2C_0%,#0B1220_100%)]">
-        <div className="mx-auto grid max-w-shell grid-cols-1 items-center gap-12 px-5 py-20 sm:py-28 lg:grid-cols-[1.55fr_0.95fr]">
+        <div className="mx-auto grid min-h-[calc(100vh-72px)] max-w-shell grid-cols-1 items-center gap-12 px-5 py-16 sm:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16 lg:py-20">
           <Reveal>
             <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-accent">
               Aspiring Associate Product Manager · Bengaluru, India
@@ -50,7 +50,7 @@ export default function HomePage() {
             </div>
           </Reveal>
           <Reveal delay={0.15}>
-            <div className="relative mx-auto w-full max-w-md">
+            <div className="relative ml-auto w-full max-w-lg lg:-mt-8">
               <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[#111C2F] shadow-[0_30px_80px_-30px_rgba(0,0,0,0.65)]">
                 <img
                   src="/profile.jpg"
