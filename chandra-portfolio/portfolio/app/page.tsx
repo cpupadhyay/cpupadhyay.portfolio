@@ -22,7 +22,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="border-b border-line bg-[linear-gradient(180deg,#101A2C_0%,#0B1220_100%)]">
-        <div className="mx-auto grid min-h-0 max-w-shell grid-cols-1 items-center gap-10 px-5 py-10 sm:py-16 md:min-h-[calc(100vh-72px)] md:grid-cols-[1.08fr_0.92fr] md:gap-10 md:py-16 lg:gap-16 lg:py-20">
+        <div className="mx-auto grid max-w-shell grid-cols-1 items-center gap-10 px-5 py-10 sm:py-12 md:grid-cols-[1.08fr_0.92fr] md:gap-10 md:py-14 lg:gap-16 lg:py-16">
           <Reveal>
             <div className="lg:pt-0">
             <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-accent">
