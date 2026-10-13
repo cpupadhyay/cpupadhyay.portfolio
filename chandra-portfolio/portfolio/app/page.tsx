@@ -108,7 +108,7 @@ export default function HomePage() {
               {
                 period: "2025 – Present",
                 title: "Independent Product Case Studies",
-                body: "Researched, wrote, and published six end-to-end case studies (Groww, Claude, Zomato, Snapmint, DreamJob, Chorus) covering user research, RICE/MoSCoW prioritization, metrics design, wireframing, and rollout planning.",
+                body: "Researched, wrote, and published six end-to-end case studies (Groww, Claude, Zomato, Snapmint, DreamJob, Lychee AI) covering user research, RICE/MoSCoW prioritization, metrics design, wireframing, and rollout planning.",
               },
               {
                 period: "2019 – 2023",
