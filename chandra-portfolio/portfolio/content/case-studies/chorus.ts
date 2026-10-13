@@ -1,10 +1,10 @@
 import { CaseStudy } from "./types";
 
-export const chorus: CaseStudy = {
-  slug: "chorus",
-  title: "Chorus — Many Minds, One Answer",
+export const Lychee AI: CaseStudy = {
+  slug: "lychee-ai",
+  title: "Lychee AI — Many Minds, One Answer",
   tagline: "An AI orchestration layer that turns six frontier models into one trusted answer",
-  company: "Chorus (0→1 Concept)",
+  company: "Lychee AI",
   role: "APM Concept Project · Full PRD",
   date: "March 2026",
   tags: ["AI", "0→1 Concept", "PRD", "MoSCoW"],
@@ -15,20 +15,20 @@ export const chorus: CaseStudy = {
     { value: ">80%", label: "Target synthesis satisfaction rate" },
   ],
   summary:
-    "Ask ChatGPT, Claude, and Gemini the same question and you get three confident, different answers. Chorus routes one query to six frontier models, lets them debate, and synthesizes a single high-confidence answer — because model disagreement isn't noise, it's signal.",
-  githubUrl: "https://cpupadhyay.github.io/Chorus-PM-Project-Case-Study/",
+    "Ask ChatGPT, Claude, and Gemini the same question and you get three confident, different answers. Lychee AI routes one query to six frontier models, lets them debate, and synthesizes a single high-confidence answer — because model disagreement isn't noise, it's signal.",
+  githubUrl: "https://getlychee-ai.vercel.app/",
   figmaUrl: "https://www.figma.com/make/PObaaCOJSgt2QEdt2blsj0/Dark-Mode-AI-App-UI",
   featured: true,
   body: `
-> **Product:** Chorus — AI Deliberation & Synthesis Engine · **Models:** ChatGPT · Claude · Gemini · Perplexity · Grok · DeepSeek
+> **Product:** Lychee AI — AI Deliberation & Synthesis Engine · **Models:** ChatGPT · Claude · Gemini · Perplexity · Grok · DeepSeek
 
 ## 1. Executive Summary
 
 Most AI power users today run the same query across multiple models — ChatGPT, Claude, Gemini, Perplexity — and manually compare answers. This costs time, creates confusion, and leaves users unsure which answer to trust.
 
-**Chorus** solves this by routing a user's question to six frontier AI models simultaneously, facilitating a structured internal debate among them, and synthesizing a single high-confidence, verified answer.
+**Lychee AI** solves this by routing a user's question to six frontier AI models simultaneously, facilitating a structured internal debate among them, and synthesizing a single high-confidence, verified answer.
 
-Chorus is not another AI chatbot. It is an **AI orchestration layer** — a trust layer on top of existing models.
+Lychee AI is not another AI chatbot. It is an **AI orchestration layer** — a trust layer on top of existing models.
 
 **One query. Six minds. One answer.**
 
@@ -64,21 +64,21 @@ Chorus is not another AI chatbot. It is an **AI orchestration layer** — a trus
 
 ### Persona 1 — "The Careful Professional"
 
-**Arjun, 28, MBA student / analyst.** Uses AI for case study research, financial analysis, report writing. Stakes are high — wrong data means credibility loss. *"ChatGPT gave me a statistic that was completely made up."* Chorus gives him one synthesized answer with a confidence score and source consensus — ready to cite.
+**Arjun, 28, MBA student / analyst.** Uses AI for case study research, financial analysis, report writing. Stakes are high — wrong data means credibility loss. *"ChatGPT gave me a statistic that was completely made up."* Lychee AI gives him one synthesized answer with a confidence score and source consensus — ready to cite.
 
 ### Persona 2 — "The Decisive PM"
 
-**Priya, 31, Product Manager.** Makes build-vs-buy calls and competitor analyses with AI; wrong advice can cost weeks of engineering time. *"Confident-sounding wrong answers are the worst kind."* Chorus surfaces where models agree vs. disagree so she decides faster with more confidence.
+**Priya, 31, Product Manager.** Makes build-vs-buy calls and competitor analyses with AI; wrong advice can cost weeks of engineering time. *"Confident-sounding wrong answers are the worst kind."* Lychee AI surfaces where models agree vs. disagree so she decides faster with more confidence.
 
 ### Persona 3 — "The Power Researcher"
 
-**Sunil, 35, independent researcher.** Runs every query on 3–4 models manually. *"I have 6 tabs open just to answer one question. Why can't they just talk to each other?"* Chorus eliminates manual triangulation entirely.
+**Sunil, 35, independent researcher.** Runs every query on 3–4 models manually. *"I have 6 tabs open just to answer one question. Why can't they just talk to each other?"* Lychee AI eliminates manual triangulation entirely.
 
 ## 4. Goals & Success Metrics
 
 ### North Star Metric
 
-> **Weekly Active Queries (WAQ)** — queries run through Chorus per week per active user. A user who runs Chorus regularly is experiencing its accuracy benefit.
+> **Weekly Active Queries (WAQ)** — queries run through Lychee AI per week per active user. A user who runs Lychee AI regularly is experiencing its accuracy benefit.
 
 ### Primary KPIs
 
@@ -114,7 +114,7 @@ Chorus is not another AI chatbot. It is an **AI orchestration layer** — a trus
 
 | Feature | Rationale |
 | --- | --- |
-| Multi-model query routing | Core product — without this, Chorus doesn't exist |
+| Multi-model query routing | Core product — without this, Lychee AI doesn't exist |
 | Individual model response display | Transparency — users must see what each model said |
 | Synthesized answer generation | Core value delivery — the "one answer" |
 | Confidence / consensus indicator | Trust signal — critical differentiator |
@@ -130,11 +130,11 @@ Custom model weighting · domain-specific model panels (e.g., a "medical panel")
 
 ### Won't Have (V1)
 
-Training custom models (Chorus orchestrates, not trains) · real-time web search (Perplexity already handles this) · voice input.
+Training custom models (Lychee AI orchestrates, not trains) · real-time web search (Perplexity already handles this) · voice input.
 
 ## 7. Product Flow & UX
 
-**Core journey:** user types a query in a single input bar → selects the model panel → Chorus routes the query to all models simultaneously → individual responses appear in a parallel view → the deliberation engine identifies agreements, surfaces disagreements, and runs a refinement round → synthesis is generated with a confidence score → user can save, export, rate, or ask a follow-up.
+**Core journey:** user types a query in a single input bar → selects the model panel → Lychee AI routes the query to all models simultaneously → individual responses appear in a parallel view → the deliberation engine identifies agreements, surfaces disagreements, and runs a refinement round → synthesis is generated with a confidence score → user can save, export, rate, or ask a follow-up.
 
 **Key screens:**
 
@@ -163,7 +163,7 @@ Training custom models (Chorus orchestrates, not trains) · real-time web search
 
 **Category:** AI Productivity / Accuracy Layer. **Tagline:** "Many minds, one answer."
 
-| Tool | What it does | What Chorus does differently |
+| Tool | What it does | What Lychee AI does differently |
 | --- | --- | --- |
 | ChatGPT / Claude / Gemini | Single model | Multi-model deliberation + consensus score |
 | Perplexity | Web search + single model | Cross-model verification |
