@@ -1,6 +1,6 @@
 import { CaseStudy } from "./types";
 
-export const Lychee AI: CaseStudy = {
+export const lycheeAI: CaseStudy = {
   slug: "lychee-ai",
   title: "Lychee AI — Many Minds, One Answer",
   tagline: "An AI orchestration layer that turns six frontier models into one trusted answer",
