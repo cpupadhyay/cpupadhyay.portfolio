@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Six end-to-end product case studies: Groww, Claude Voice Mode, Zomato, Snapmint, DreamJob, and Chorus.",
+  description: "Six end-to-end product case studies: Groww, Claude Voice Mode, Zomato, Snapmint, DreamJob, and Lychee AI.",
 };
 
 export default function ProjectsPage() {
