@@ -13,6 +13,10 @@ export type CaseStudyMeta = {
   deckUrl?: string;
   pdfUrl?: string;
   githubUrl?: string;
+  /** Link to a live, shipped product. */
+  liveUrl?: string;
+  /** True when this is a live product rather than a case study. */
+  live?: boolean;
   featured?: boolean;
 };
 

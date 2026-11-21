@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 
 export default function ResumePage() {
   return (
-    <div className="mx-auto max-w-prose px-5 py-16">
+    <div className="mx-auto max-w-prose px-5 py-16 sm:py-20">
       <Reveal>
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-accent">Resume</p>
             <h1 className="mt-2 text-4xl font-extrabold tracking-tight">Chandra Prakash Upadhyay</h1>
-            <p className="mt-1 text-sm font-semibold text-ink">Associate Product Manager · Product Analyst</p>
+            <p className="mt-1 text-sm font-semibold text-ink">Founder, Lychee AI · Aspiring Associate Product Manager</p>
             <p className="mt-1 text-sm font-medium text-muted">
               Bengaluru, India · +91 8303042121 · chandraprakashupadhyay2001@gmail.com
             </p>
@@ -37,11 +37,10 @@ export default function ResumePage() {
           <section>
             <h2 className="border-b border-line pb-2 text-sm font-bold uppercase tracking-wider">Summary</h2>
             <p className="mt-3 text-sm leading-relaxed text-[#374151]">
-              Computer Science graduate who turns messy data into product decisions. At Soroco, analysed
-              500K+ rows of process data and shipped 3 Power BI dashboards used in weekly product reviews.
-              Since then, built three end-to-end product cases covering PRDs, funnel diagnosis, RICE
-              prioritisation and live Figma prototypes. Comfortable owning a metric, writing the spec and
-              defending the trade-offs.
+              Founder of Lychee AI, a live multi-model AI assistant I designed, built and launched. Computer
+              Science graduate who turns messy data into product decisions: at Soroco, analysed 500K+ rows of
+              process data and shipped 3 Power BI dashboards used in weekly product reviews. Comfortable owning a
+              metric, writing the spec, shipping the product and defending the trade-offs.
             </p>
           </section>
 
@@ -62,18 +61,22 @@ export default function ResumePage() {
           </section>
 
           <section>
-            <h2 className="border-b border-line pb-2 text-sm font-bold uppercase tracking-wider">Product Projects</h2>
+            <h2 className="border-b border-line pb-2 text-sm font-bold uppercase tracking-wider">Product &amp; Projects</h2>
             <div className="mt-3 space-y-6">
               <div>
-                <div className="flex items-baseline justify-between">
-                  <h3 className="text-base font-bold">Chorus · AI Multi-Model Deliberation Platform</h3>
-                  <span className="text-[12px] font-medium text-muted">Feb–Mar 2026</span>
+                <div className="flex flex-wrap items-baseline justify-between gap-x-4">
+                  <h3 className="text-base font-bold">
+                    Lychee AI · AI-Powered Multi-Model Assistant ·{" "}
+                    <a href="https://getlychee-ai.online" target="_blank" rel="noreferrer" className="text-accent hover:underline">Website</a>
+                  </h3>
+                  <span className="text-[12px] font-medium text-muted">Mar 2026 – Present</span>
                 </div>
+                <p className="text-[13px] font-medium text-muted">Founder &amp; Product Builder</p>
                 <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-[#374151]">
-                  <li>Shipped a live AI product that routes one query to GPT, Gemini and Claude and synthesises a single reasoned answer, published with the full PRD and Figma flows.</li>
-                  <li>Set Weekly Active Queries as the North Star Metric, with answer acceptance and repeat query rate as supporting engagement measures.</li>
-                  <li>Scoped v1 to three high-intent use cases after a competitive scan, with guardrails on cost per query and response latency.</li>
-                  <li>Ran a red-teaming pass on model disagreement cases to shape the answer-confidence display, and submitted the product to an AI safety fellowship.</li>
+                  <li>Built and launched a live AI web app where models debate each other or are scored by a judge model to return one trusted answer, supporting ChatGPT, Claude, Gemini, Grok, DeepSeek, Llama, Mistral and more.</li>
+                  <li>Designed the UX and workflows and owned prioritisation through deployment on Vercel with GitHub workflows; shipped Google sign-in, an open demo mode, single-model chat and an installable app.</li>
+                  <li>Set Weekly Active Queries as the North Star and launched bring-your-own-key first to learn who the users are before adding hosted Standard and Pro plans.</li>
+                  <li>Reached ~300 visitors through organic launch videos on X, with no paid acquisition.</li>
                 </ul>
               </div>
               <div>
@@ -136,7 +139,7 @@ export default function ResumePage() {
           <section>
             <h2 className="border-b border-line pb-2 text-sm font-bold uppercase tracking-wider">Certifications</h2>
             <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-[#374151]">
-              <li>IBM AI Product Manager Professional Certificate, Coursera · In Progress, expected Aug 2026</li>
+              <li>IBM AI Product Manager Professional Certificate, Coursera · In progress</li>
               <li>Aha! Product Management Professional, LinkedIn Learning · Jan 2026</li>
               <li>Data Analytics Professional, PW Skills · Oct 2025</li>
             </ul>

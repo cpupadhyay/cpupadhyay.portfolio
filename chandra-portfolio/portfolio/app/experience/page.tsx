@@ -1,66 +1,60 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import { timeline } from "@/content/profile";
 
 export const metadata: Metadata = {
   title: "Experience",
-  description: "Work experience and education of Chandra Prakash Upadhyay.",
+  description:
+    "Founder & Product Builder at Lychee AI (Mar 2026 – Present), product case studies, Data Analyst Intern at Soroco, and B.Tech CSE.",
 };
-
-const items = [
-  {
-    period: "Apr 2025 – May 2025",
-    title: "Data Analyst Intern",
-    org: "Soroco · Bengaluru",
-    points: [
-      "Tracked product health across 500K+ data points, partnering with Product, Engineering, and Customer Success.",
-      "Built Power BI dashboards surfacing KPI trends, user behavior patterns, and workflow drop-offs.",
-      "Helped teams prioritize fixes and validate feature releases; collaborated on feature prioritization from user behavior data.",
-      "Worked with SQL and Python in an Agile environment.",
-    ],
-  },
-  {
-    period: "2025 – Present",
-    title: "Independent Product Work",
-    org: "Case studies, teardowns & PRDs",
-    points: [
-      "Published six end-to-end product case studies: Groww Copilot, Claude Voice Mode, Zomato Retention, Snapmint Trust, DreamJob, and Chorus.",
-      "Practiced the full PM toolkit: user research, personas, JTBD, RICE/MoSCoW, north-star metric design, guardrails, wireframing, and rollout planning.",
-      "Mined 150+ user reviews for the Claude Voice Mode teardown; designed MVP experiments with explicit kill criteria.",
-    ],
-  },
-  {
-    period: "Jul 2019 – Jun 2023",
-    title: "B.Tech, Computer Science & Engineering",
-    org: "SRMU Lucknow · CGPA 7.54",
-    points: [
-      "Foundation in programming, databases, and systems that underpins my analytics and product work.",
-    ],
-  },
-];
 
 export default function ExperiencePage() {
   return (
-    <div className="mx-auto max-w-shell px-5 py-16">
+    <div className="mx-auto max-w-shell px-5 py-16 sm:py-20">
       <Reveal>
-        <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-accent">Background</p>
-        <h1 className="mt-2 text-4xl font-extrabold tracking-tight">Experience</h1>
+        <p className="eyebrow">Background</p>
+        <h1 className="mt-3 text-4xl font-bold tracking-[-0.04em] sm:text-6xl">Experience</h1>
+        <p className="mt-4 max-w-2xl text-lg text-muted">
+          Data analyst first, then product case studies, now building my own AI product.
+        </p>
       </Reveal>
-      <ol className="mt-12 max-w-3xl space-y-0 border-l border-line pl-6">
-        {items.map((item, i) => (
-          <Reveal key={item.title} delay={i * 0.08}>
-            <li className="relative pb-12">
-              <span className="absolute -left-[29px] top-1.5 h-2.5 w-2.5 rounded-full border-2 border-white bg-accent" aria-hidden="true" />
-              <p className="text-[12px] font-semibold uppercase tracking-wider text-muted">{item.period}</p>
-              <h2 className="mt-1 text-xl font-bold text-ink">{item.title}</h2>
-              <p className="text-sm font-medium text-accent">{item.org}</p>
-              <ul className="mt-3 space-y-2">
+
+      <ol className="relative mt-14 max-w-3xl border-l border-line pl-8">
+        {timeline.map((item, i) => (
+          <Reveal key={item.title} delay={i * 0.06}>
+            <li className="relative pb-14">
+              <span
+                className={`absolute -left-[38px] top-1 flex h-4 w-4 items-center justify-center rounded-full border-2 border-paper ${
+                  item.current ? "bg-live" : "bg-surface-3"
+                }`}
+                aria-hidden="true"
+              >
+                {item.current && <span className="absolute h-4 w-4 animate-ping rounded-full bg-live/40" />}
+              </span>
+              <div className="flex flex-wrap items-center gap-3">
+                <p className="text-[12px] font-semibold uppercase tracking-wider text-muted">{item.period}</p>
+                {item.current && (
+                  <span className="rounded-full bg-live/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-live">
+                    Current
+                  </span>
+                )}
+              </div>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-ink">{item.title}</h2>
+              <p className={`text-sm font-medium ${item.current ? "text-lychee-dim" : "text-accent-dim"}`}>{item.org}</p>
+              <ul className="mt-4 space-y-2.5">
                 {item.points.map((p) => (
-                  <li key={p} className="flex gap-2 text-sm leading-relaxed text-[#4B5563]">
-                    <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-muted" aria-hidden="true" />
+                  <li key={p} className="flex gap-3 text-[15px] leading-relaxed text-body">
+                    <span className="mt-2.5 h-1 w-1 shrink-0 rounded-full bg-muted" aria-hidden="true" />
                     {p}
                   </li>
                 ))}
               </ul>
+              {item.href && (
+                <Link href={item.href} className="focus-ring mt-4 inline-block rounded text-sm font-semibold text-accent">
+                  {item.current ? "Read the Lychee AI story →" : "See the case studies →"}
+                </Link>
+              )}
             </li>
           </Reveal>
         ))}

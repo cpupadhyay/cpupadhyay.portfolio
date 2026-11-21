@@ -3,24 +3,71 @@ import { CaseStudy } from "./types";
 export const lycheeAI: CaseStudy = {
   slug: "lychee-ai",
   title: "Lychee AI — Many Minds, One Answer",
-  tagline: "An AI orchestration layer that turns six frontier models into one trusted answer",
+  tagline: "A live AI assistant where frontier models debate and judge each other, so you get one answer you can trust",
   company: "Lychee AI",
-  role: "APM Concept Project · Full PRD",
-  date: "March 2026",
-  tags: ["AI", "0→1 Concept", "PRD", "MoSCoW"],
+  role: "Founder & Product Builder",
+  date: "Mar 2026 – Present",
+  tags: ["Live product", "AI", "0→1", "Founder"],
   nsm: "Weekly Active Queries (WAQ)",
   stats: [
-    { value: "6", label: "Frontier models deliberating in parallel" },
-    { value: "15+", label: "Target WAQ per user by Month 6" },
-    { value: ">80%", label: "Target synthesis satisfaction rate" },
+    { value: "Live", label: "Shipped web app at getlychee-ai.online" },
+    { value: "2", label: "Answer modes: Debate and Judge" },
+    { value: "~300", label: "Visitors in the first weeks, fully organic" },
   ],
   summary:
-    "Ask ChatGPT, Claude, and Gemini the same question and you get three confident, different answers. Lychee AI routes one query to six frontier models, lets them debate, and synthesizes a single high-confidence answer — because model disagreement isn't noise, it's signal.",
-  githubUrl: "https://getlychee-ai.vercel.app/",
+    "Ask ChatGPT, Claude and Gemini the same question and you get three confident, different answers. I designed, built and launched Lychee AI so models can debate each other or be judged by another model, and you get one answer you can trust. Started as a PRD in March 2026; now a live product I keep shipping every week.",
+  liveUrl: "https://getlychee-ai.online",
   figmaUrl: "https://www.figma.com/make/PObaaCOJSgt2QEdt2blsj0/Dark-Mode-AI-App-UI",
   featured: true,
+  live: true,
   body: `
-> **Product:** Lychee AI — AI Deliberation & Synthesis Engine · **Models:** ChatGPT · Claude · Gemini · Perplexity · Grok · DeepSeek
+> **Status:** Live at [getlychee-ai.online](https://getlychee-ai.online) · **Role:** Founder & Product Builder · **Timeline:** March 2026 – Present
+
+## Where Lychee AI is today
+
+Lychee AI started in March 2026 as a PRD and a Figma prototype. I then built and launched it myself, and I keep shipping it week after week. This page has two parts: what is live today and the product decisions behind it, followed by the original PRD that started it all.
+
+### What's live
+
+| Area | What shipped |
+| --- | --- |
+| **Debate mode** | Several models answer, critique each other, and converge on one answer |
+| **Judge mode** | Each model answers on its own; a judge model picks the best answer |
+| **Single-model chat** | A model picker next to Send, with an Auto option, for quick questions that don't need a debate |
+| **Model coverage** | ChatGPT, Claude, Gemini, Grok, DeepSeek, Llama, Mistral and more |
+| **Access** | Google sign-in, bring-your-own-key (BYOK), and an open "Try demo" mode with no sign-in |
+| **Installable app** | Installs to the phone or desktop home screen as an app (PWA), straight from the website |
+| **Stack & delivery** | Deployed on Vercel with GitHub-based workflows; I own everything from prioritisation to deployment |
+
+### Key product decisions
+
+| Decision | Why I made it |
+| --- | --- |
+| **Launch with BYOK, not paid plans** | Learn who the real users are and what they ask before taking on inference costs. Zero burn while validating demand |
+| **Keep "Try demo" open without sign-in** | Sign-in is friction before the "aha" moment; the demo shows the value first |
+| **Require Google sign-in for BYOK use** | Ties usage to a real account so I can measure retention and Weekly Active Queries properly |
+| **Ship an installable web app before app stores** | Same mobile experience without store fees or review cycles; store apps only after the paid plans earn revenue |
+| **Add single-model chat next to Debate** | Not every question needs a panel of models. A fast path keeps quick queries quick and protects the core metric |
+| **North Star = Weekly Active Queries** | Repeat questions mean people trust the answers, which is the whole point of the product |
+
+### Traction so far
+
+- Around **300 visitors** in the first weeks, all organic (self-made launch videos on X, no paid ads)
+- Launch film and product walkthrough produced in-house
+- Planning a Product Hunt launch
+
+### What's next
+
+- **Hosted Standard and Pro plans**, so users don't need their own API key (payments via a merchant-of-record provider)
+- **Live web search**, so Lychee AI can answer questions about trending topics
+- **Image generation**
+- **Creator partnerships** on X, paid on commission for paying users rather than upfront
+
+---
+
+## The original PRD (March 2026)
+
+*Everything below is the plan that started Lychee AI. Scope and pricing have since evolved (see above), but the problem, personas and metrics still guide the roadmap.*
 
 ## 1. Executive Summary
 
@@ -189,6 +236,6 @@ Training custom models (Lychee AI orchestrates, not trains) · real-time web sea
 
 ---
 
-*This is a product concept developed as part of an APM portfolio. Not affiliated with any of the AI companies mentioned.*
+*Lychee AI is an independent product. It is not affiliated with any of the AI companies mentioned.*
 `,
 };
