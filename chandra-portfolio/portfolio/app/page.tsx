@@ -57,8 +57,27 @@ export default function HomePage() {
       {/* ───────────────── Hero ───────────────── */}
       <section className="relative overflow-hidden">
         <div className="grid-bg pointer-events-none absolute inset-0" aria-hidden="true" />
-        <div className="relative mx-auto grid max-w-shell grid-cols-1 items-center gap-14 px-5 pb-20 pt-12 sm:pt-16 md:grid-cols-[1.15fr_0.85fr] lg:pb-28 lg:pt-20">
+        <div className="relative mx-auto grid max-w-shell grid-cols-1 items-center gap-14 px-5 pb-16 pt-8 sm:pt-16 md:grid-cols-[1.15fr_0.85fr] md:pb-20 lg:pb-28 lg:pt-20">
           <Reveal>
+            {/* Phones only: small photo + name so the first screen shows who this is */}
+            <div className="mb-7 flex items-center gap-4 md:hidden">
+              <div className="h-[72px] w-[72px] shrink-0 rounded-full bg-[conic-gradient(from_140deg,#FF4F7B,#7DA2FF,#34D399,#FF4F7B)] p-[2px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/profile.jpg"
+                  alt="Portrait of Chandra Prakash Upadhyay"
+                  className="h-full w-full rounded-full border-[3px] border-paper object-cover"
+                  width={144}
+                  height={144}
+                />
+              </div>
+              <div className="min-w-0">
+                <p className="text-base font-semibold leading-tight text-ink">{profile.name}</p>
+                <p className="mt-1 text-[13px] text-muted">
+                  Founder, <span className="text-lychee-dim">Lychee AI</span> · {profile.location.split(",")[0]}
+                </p>
+              </div>
+            </div>
             <a
               href={profile.lychee}
               target="_blank"
@@ -111,7 +130,7 @@ export default function HomePage() {
             </p>
           </Reveal>
 
-          <Reveal delay={0.15}>
+          <Reveal delay={0.15} className="hidden md:block">
             <div className="relative mx-auto w-full max-w-[22rem] md:ml-auto md:mr-0">
               <div className="absolute -inset-6 rounded-full bg-[conic-gradient(from_180deg,rgba(255,79,123,0.35),rgba(125,162,255,0.35),rgba(52,211,153,0.2),rgba(255,79,123,0.35))] opacity-60 blur-3xl" aria-hidden="true" />
               <div className="relative aspect-square rounded-full bg-[conic-gradient(from_140deg,#FF4F7B,#7DA2FF,#34D399,#FF4F7B)] p-[3px]">
